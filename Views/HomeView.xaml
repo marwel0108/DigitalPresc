@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="DigitalPresc.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DigitalPresc.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="950">
+    <Grid Style="{StaticResource BackGroundGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#0b3736">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/resources/images/Logo2.jpeg" HorizontalAlignment="Left"/>
+        </Grid>
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="475*"/>
+                <ColumnDefinition Width="64*"/>
+                <ColumnDefinition Width="411*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="40,0,0,0">
+                <Grid.Background>
+                    <ImageBrush Stretch="Uniform" ImageSource="../resources/images/fondomedico.jpeg" />
+                </Grid.Background>
+            </Grid>
+            <Grid Grid.Column="1" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button  Command="{Binding NavigationCommand}" Grid.Row="0" Style="{StaticResource roundedButton}" Height="118" Width="350" FontSize="22" VerticalAlignment="Top" Margin="62,129,63,0">
+                    GENERAR RECETA
+                    <Button.Background>
+                        <ImageBrush Stretch="UniformToFill" ImageSource="../resources/images/BotonVerde.jpeg"/>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="1" Style="{StaticResource roundedButton}" Width="350" FontSize="22" Margin="62,10,63,128">
+                    HISTORIAL
+                    <Button.Background>
+                        <ImageBrush Stretch="UniformToFill" ImageSource="../resources/images/BotonAzul.jpeg"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

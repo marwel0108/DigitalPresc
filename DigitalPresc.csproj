@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\images\BotonAzul.jpeg" />
+    <None Remove="resources\images\BotonVerde.jpeg" />
+    <None Remove="resources\images\Contraseña.jpeg" />
+    <None Remove="resources\images\Email.jpeg" />
+    <None Remove="resources\images\fondo.jpeg" />
+    <None Remove="resources\images\Fondo2.png" />
+    <None Remove="resources\images\FondoMedico.jpeg" />
+    <None Remove="resources\images\FondoTarjeta.jpeg" />
+    <None Remove="resources\images\Logo.jpeg" />
+    <None Remove="resources\images\Logo2.jpeg" />
+    <None Remove="resources\images\Logo3.jpeg" />
+    <None Remove="resources\images\medicamento1.jpeg" />
+    <None Remove="resources\images\medicamento2.jpeg" />
+    <None Remove="resources\images\medicamento3.jpeg" />
+    <None Remove="resources\images\medicamento4.jpeg" />
+    <None Remove="resources\images\medicamento5.jpeg" />
+    <None Remove="resources\images\medicamento6.jpeg" />
+    <None Remove="resources\images\medicamento7.jpeg" />
+    <None Remove="resources\images\medicamento8.jpeg" />
+    <None Remove="resources\images\medicamento9.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\images\Fondo2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\images\botonazul.jpeg" />
+    <Resource Include="resources\images\botonverde.jpeg" />
+    <Resource Include="resources\images\contraseña.jpeg" />
+    <Resource Include="resources\images\email.jpeg" />
+    <Resource Include="resources\images\fondo.jpeg" />
+    <Resource Include="resources\images\fondomedico.jpeg" />
+    <Resource Include="resources\images\fondotarjeta.jpeg" />
+    <Resource Include="resources\images\logo.jpeg" />
+    <Resource Include="resources\images\logo2.jpeg" />
+    <Resource Include="resources\images\logo3.jpeg" />
+    <Resource Include="resources\images\medicamento1.jpeg" />
+    <Resource Include="resources\images\medicamento2.jpeg" />
+    <Resource Include="resources\images\medicamento3.jpeg" />
+    <Resource Include="resources\images\medicamento4.jpeg" />
+    <Resource Include="resources\images\medicamento5.jpeg" />
+    <Resource Include="resources\images\medicamento6.jpeg" />
+    <Resource Include="resources\images\medicamento7.jpeg" />
+    <Resource Include="resources\images\medicamento8.jpeg" />
+    <Resource Include="resources\images\medicamento9.jpeg" />
+  </ItemGroup>
+
+</Project>
