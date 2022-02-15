@@ -22,7 +22,7 @@
                 </Button.Background>
             </Button>
         </Grid>
-        <Button Command="{Binding NavigationCommand}" Grid.Row="1" Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Height="40" Width="200">
+        <Button Command="{Binding MedsListNavCommand}" Grid.Row="1" Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Height="40" Width="200">
             CONTINUAR
         </Button>
     </Grid>

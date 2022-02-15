@@ -11,11 +11,13 @@ namespace DigitalPresc.ViewModels
 {
     public class HomeViewModel : ViewModelBase
     {
-        public ICommand NavigationCommand { get; }
+        public ICommand PatientRegisterNavCommand { get; }
+        public ICommand HistoryNavCommand { get; }
 
         public HomeViewModel(NavigationStore navigationStore)
         {
-            NavigationCommand = new PatientRegisterNavCommand(navigationStore);
+            PatientRegisterNavCommand = new PatientRegisterNavCommand(navigationStore);
+            HistoryNavCommand = new HistoryNavCommand(navigationStore);
         }
     }
 }
