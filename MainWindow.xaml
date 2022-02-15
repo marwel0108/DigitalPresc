@@ -25,7 +25,9 @@
             <DataTemplate DataType="{x:Type vms:SelMedsViewModel}">
                 <views:SelMedsView/>
             </DataTemplate>
-
+            <DataTemplate DataType="{x:Type vms:HistoryViewModel}">
+                <views:HistoryView/>
+            </DataTemplate>
         </ContentControl.Resources>
     </ContentControl>
 </Window>

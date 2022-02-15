@@ -13,16 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DigitalPresc
+namespace DigitalPresc.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica de interacción para HistoryView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HistoryView : UserControl
     {
-        public MainWindow()
+        public HistoryView()
         {
-            this.FontFamily = new FontFamily("Fira Code");
             InitializeComponent();
         }
     }
