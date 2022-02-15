@@ -34,13 +34,13 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button  Command="{Binding NavigationCommand}" Grid.Row="0" Style="{StaticResource roundedButton}" Height="118" Width="350" FontSize="22" VerticalAlignment="Top" Margin="62,129,63,0">
+                <Button  Command="{Binding PatientRegisterNavCommand}" Grid.Row="0" Style="{StaticResource roundedButton}" Height="118" Width="350" FontSize="22" VerticalAlignment="Top" Margin="62,129,63,0">
                     GENERAR RECETA
                     <Button.Background>
                         <ImageBrush Stretch="UniformToFill" ImageSource="../resources/images/BotonVerde.jpeg"/>
                     </Button.Background>
                 </Button>
-                <Button Grid.Row="1" Style="{StaticResource roundedButton}" Width="350" FontSize="22" Margin="62,10,63,128">
+                <Button Command="{Binding HistoryNavCommand}" Grid.Row="1" Style="{StaticResource roundedButton}" Width="350" FontSize="22" Margin="62,10,63,128">
                     HISTORIAL
                     <Button.Background>
                         <ImageBrush Stretch="UniformToFill" ImageSource="../resources/images/BotonAzul.jpeg"/>

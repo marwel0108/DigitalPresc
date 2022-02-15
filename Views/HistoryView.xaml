@@ -16,7 +16,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Style="{StaticResource roundedButton}" Height="70" Width="210" FontSize="22" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Button Command="{Binding NavigationCommand}" Grid.Row="0" Style="{StaticResource roundedButton}" Height="70" Width="210" FontSize="22" VerticalAlignment="Top" HorizontalAlignment="Left">
                 <Button.Background>
                     <ImageBrush Stretch="UniformToFill" ImageSource="/resources/images/Logo2.jpeg"/>
                 </Button.Background>
