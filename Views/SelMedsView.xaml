@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DigitalPresc.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="950">
+             d:DesignHeight="700" d:DesignWidth="1050">
     <Grid Style="{StaticResource BackGroundGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
@@ -21,9 +21,338 @@
                     <ImageBrush Stretch="UniformToFill" ImageSource="/resources/images/Logo2.jpeg"/>
                 </Button.Background>
             </Button>
+            <Button Command="{Binding PatientRegisterNavCommand}" HorizontalAlignment="Left" Background="#b21600" Height="70" Width="210" FontSize="22" Foreground="White"  Grid.Column="1" Margin="105,0,0,0" BorderThickness="0" FontWeight="Bold">
+                Regresar
+            </Button>
+            <Button  Command="{Binding MedsListNavCommand}" HorizontalAlignment="Right" Background="#0b3736" Height="70" Width="210" FontSize="22" Foreground="White" Grid.Column="1" Margin="315,0,0,0" BorderThickness="0" FontWeight="Bold">
+                Continuar
+            </Button>
         </Grid>
-        <Button Command="{Binding MedsListNavCommand}" Grid.Row="1" Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Height="40" Width="200">
-            CONTINUAR
-        </Button>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Margin="25">
+                    <Border CornerRadius="10" Background="#21a9a6">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="95"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Image Source="../resources/images/medicamentos/amlodipino.jpg"  Margin="0 5 0 0"/>
+                                </Grid>
+                                <Grid Grid.Row="1" >
+                                    <TextBlock FontWeight="Bold" Text="Amlodipino" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#20a9a5"/>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,10,0,0" TextWrapping="Wrap" Text="Dosis" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBox Margin="27,31,161,72"></TextBox>
+                                <ComboBox Margin="27,92,161,10">
+                                    <ComboBoxItem Content="Oral" IsSelected="True"/>
+                                    <ComboBoxItem Content="Intramuscular" />
+                                    <ComboBoxItem Content="Sublingual" />
+                                    <ComboBoxItem Content="Dérmico" />
+                                    <ComboBoxItem Content="Intradermico" />
+                                    <ComboBoxItem Content="Oftálmico" />
+                                    <ComboBoxItem Content="Anal" />
+                                    <ComboBoxItem Content="Vaginal" />
+                                </ComboBox>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,71,0,0" TextWrapping="Wrap" Text="Vía" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="164,10,0,0" TextWrapping="Wrap" Text="Hora" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <ComboBox Margin="164,30,10,74" RenderTransformOrigin="0.45,-0.263" >
+                                    <ComboBoxItem Content="2 hrs" IsSelected="True"/>
+                                    <ComboBoxItem Content="4 hrs" />
+                                    <ComboBoxItem Content="6 hrs" />
+                                    <ComboBoxItem Content="8 hrs" />
+                                    <ComboBoxItem Content="12 hrs" />
+                                    <ComboBoxItem Content="24 hrs" />
+                                    <ComboBoxItem Content="48 hrs" />
+                                    <ComboBoxItem Content="72 hrs" />
+                                </ComboBox>
+                                <Button Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Margin="164,79,5,10" >
+                                    Agregar
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1" Margin="25">
+                    <Border CornerRadius="10" Background="#21a9a6">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="95"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Image Source="../resources/images/medicamentos/aspirina.png" Margin="0 5 0 0"/>
+                                </Grid>
+                                <Grid Grid.Row="1" >
+                                    <TextBlock FontWeight="Bold" Text="Aspirina" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#20a9a5"/>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,10,0,0" TextWrapping="Wrap" Text="Dosis" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBox Margin="27,31,161,72"></TextBox>
+                                <ComboBox Margin="27,92,161,10">
+                                    <ComboBoxItem Content="Oral" IsSelected="True"/>
+                                    <ComboBoxItem Content="Intramuscular" />
+                                    <ComboBoxItem Content="Sublingual" />
+                                    <ComboBoxItem Content="Dérmico" />
+                                    <ComboBoxItem Content="Intradermico" />
+                                    <ComboBoxItem Content="Oftálmico" />
+                                    <ComboBoxItem Content="Anal" />
+                                    <ComboBoxItem Content="Vaginal" />
+                                </ComboBox>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,71,0,0" TextWrapping="Wrap" Text="Vía" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="164,10,0,0" TextWrapping="Wrap" Text="Hora" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <ComboBox Margin="164,30,10,74" RenderTransformOrigin="0.45,-0.263" >
+                                    <ComboBoxItem Content="2 hrs" IsSelected="True"/>
+                                    <ComboBoxItem Content="4 hrs" />
+                                    <ComboBoxItem Content="6 hrs" />
+                                    <ComboBoxItem Content="8 hrs" />
+                                    <ComboBoxItem Content="12 hrs" />
+                                    <ComboBoxItem Content="24 hrs" />
+                                    <ComboBoxItem Content="48 hrs" />
+                                    <ComboBoxItem Content="72 hrs" />
+                                </ComboBox>
+                                <Button Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Margin="164,79,5,10" >
+                                    Agregar
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="2" Margin="25">
+                    <Border CornerRadius="10" Background="#21a9a6">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="95"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Image Source="../resources/images/medicamentos/levotiroxina.jpg" Margin="0 5 0 0"/>
+                                </Grid>
+                                <Grid Grid.Row="1" >
+                                    <TextBlock FontWeight="Bold" Text="Levotiroxina" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#20a9a5"/>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,10,0,0" TextWrapping="Wrap" Text="Dosis" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBox Margin="27,31,161,72"></TextBox>
+                                <ComboBox Margin="27,92,161,10">
+                                    <ComboBoxItem Content="Oral" IsSelected="True"/>
+                                    <ComboBoxItem Content="Intramuscular" />
+                                    <ComboBoxItem Content="Sublingual" />
+                                    <ComboBoxItem Content="Dérmico" />
+                                    <ComboBoxItem Content="Intradermico" />
+                                    <ComboBoxItem Content="Oftálmico" />
+                                    <ComboBoxItem Content="Anal" />
+                                    <ComboBoxItem Content="Vaginal" />
+                                </ComboBox>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,71,0,0" TextWrapping="Wrap" Text="Vía" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="164,10,0,0" TextWrapping="Wrap" Text="Hora" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <ComboBox Margin="164,30,10,74" RenderTransformOrigin="0.45,-0.263" >
+                                    <ComboBoxItem Content="2 hrs" IsSelected="True"/>
+                                    <ComboBoxItem Content="4 hrs" />
+                                    <ComboBoxItem Content="6 hrs" />
+                                    <ComboBoxItem Content="8 hrs" />
+                                    <ComboBoxItem Content="12 hrs" />
+                                    <ComboBoxItem Content="24 hrs" />
+                                    <ComboBoxItem Content="48 hrs" />
+                                    <ComboBoxItem Content="72 hrs" />
+                                </ComboBox>
+                                <Button Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Margin="164,79,5,10" >
+                                    Agregar
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Margin="25">
+                    <Border CornerRadius="10" Background="#21a9a6">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="95"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Image Source="../resources/images/medicamentos/omeprazol.jpg" Margin="0 5 0 0"/>
+                                </Grid>
+                                <Grid Grid.Row="1" >
+                                    <TextBlock FontWeight="Bold" Text="Omeprazol" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#20a9a5"/>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,10,0,0" TextWrapping="Wrap" Text="Dosis" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBox Margin="27,31,161,72"></TextBox>
+                                <ComboBox Margin="27,92,161,10">
+                                    <ComboBoxItem Content="Oral" IsSelected="True"/>
+                                    <ComboBoxItem Content="Intramuscular" />
+                                    <ComboBoxItem Content="Sublingual" />
+                                    <ComboBoxItem Content="Dérmico" />
+                                    <ComboBoxItem Content="Intradermico" />
+                                    <ComboBoxItem Content="Oftálmico" />
+                                    <ComboBoxItem Content="Anal" />
+                                    <ComboBoxItem Content="Vaginal" />
+                                </ComboBox>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,71,0,0" TextWrapping="Wrap" Text="Vía" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="164,10,0,0" TextWrapping="Wrap" Text="Hora" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <ComboBox Margin="164,30,10,74" RenderTransformOrigin="0.45,-0.263" >
+                                    <ComboBoxItem Content="2 hrs" IsSelected="True"/>
+                                    <ComboBoxItem Content="4 hrs" />
+                                    <ComboBoxItem Content="6 hrs" />
+                                    <ComboBoxItem Content="8 hrs" />
+                                    <ComboBoxItem Content="12 hrs" />
+                                    <ComboBoxItem Content="24 hrs" />
+                                    <ComboBoxItem Content="48 hrs" />
+                                    <ComboBoxItem Content="72 hrs" />
+                                </ComboBox>
+                                <Button Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Margin="164,79,5,10" >
+                                    Agregar
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1" Margin="25">
+                    <Border CornerRadius="10" Background="#21a9a6">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="95"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Image Source="../resources/images/medicamentos/ramipril.jpg" Margin="0 5 0 0"/>
+                                </Grid>
+                                <Grid Grid.Row="1" >
+                                    <TextBlock FontWeight="Bold" Text="Ramipril" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#20a9a5"/>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,10,0,0" TextWrapping="Wrap" Text="Dosis" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBox Margin="27,31,161,72"></TextBox>
+                                <ComboBox Margin="27,92,161,10">
+                                    <ComboBoxItem Content="Oral" IsSelected="True"/>
+                                    <ComboBoxItem Content="Intramuscular" />
+                                    <ComboBoxItem Content="Sublingual" />
+                                    <ComboBoxItem Content="Dérmico" />
+                                    <ComboBoxItem Content="Intradermico" />
+                                    <ComboBoxItem Content="Oftálmico" />
+                                    <ComboBoxItem Content="Anal" />
+                                    <ComboBoxItem Content="Vaginal" />
+                                </ComboBox>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,71,0,0" TextWrapping="Wrap" Text="Vía" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="164,10,0,0" TextWrapping="Wrap" Text="Hora" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <ComboBox Margin="164,30,10,74" RenderTransformOrigin="0.45,-0.263" >
+                                    <ComboBoxItem Content="2 hrs" IsSelected="True"/>
+                                    <ComboBoxItem Content="4 hrs" />
+                                    <ComboBoxItem Content="6 hrs" />
+                                    <ComboBoxItem Content="8 hrs" />
+                                    <ComboBoxItem Content="12 hrs" />
+                                    <ComboBoxItem Content="24 hrs" />
+                                    <ComboBoxItem Content="48 hrs" />
+                                    <ComboBoxItem Content="72 hrs" />
+                                </ComboBox>
+                                <Button Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Margin="164,79,5,10" >
+                                    Agregar
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="2" Margin="25">
+                    <Border CornerRadius="10" Background="#21a9a6">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="95"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Image Source="../resources/images/medicamentos/simvastatina.jpg" Margin="0 5 0 0"/>
+                                </Grid>
+                                <Grid Grid.Row="1" >
+                                    <TextBlock FontWeight="Bold" Text="Simvastatina" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#20a9a5"/>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,10,0,0" TextWrapping="Wrap" Text="Dosis" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBox Margin="27,31,161,72"></TextBox>
+                                <ComboBox Margin="27,92,161,10">
+                                    <ComboBoxItem Content="Oral" IsSelected="True"/>
+                                    <ComboBoxItem Content="Intramuscular" />
+                                    <ComboBoxItem Content="Sublingual" />
+                                    <ComboBoxItem Content="Dérmico" />
+                                    <ComboBoxItem Content="Intradermico" />
+                                    <ComboBoxItem Content="Oftálmico" />
+                                    <ComboBoxItem Content="Anal" />
+                                    <ComboBoxItem Content="Vaginal" />
+                                </ComboBox>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="27,71,0,0" TextWrapping="Wrap" Text="Vía" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <TextBlock FontWeight="Bold" Background="#20a9a5" HorizontalAlignment="Left" Margin="164,10,0,0" TextWrapping="Wrap" Text="Hora" VerticalAlignment="Top" RenderTransformOrigin="-0.343,-0.138"/>
+                                <ComboBox Margin="164,30,10,74" RenderTransformOrigin="0.45,-0.263" >
+                                    <ComboBoxItem Content="2 hrs" IsSelected="True"/>
+                                    <ComboBoxItem Content="4 hrs" />
+                                    <ComboBoxItem Content="6 hrs" />
+                                    <ComboBoxItem Content="8 hrs" />
+                                    <ComboBoxItem Content="12 hrs" />
+                                    <ComboBoxItem Content="24 hrs" />
+                                    <ComboBoxItem Content="48 hrs" />
+                                    <ComboBoxItem Content="72 hrs" />
+                                </ComboBox>
+                                <Button Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Margin="164,79,5,10" >
+                                    Agregar
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>

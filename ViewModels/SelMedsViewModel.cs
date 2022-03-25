@@ -14,10 +14,13 @@ namespace DigitalPresc.ViewModels
         public ICommand MedsListNavCommand { get; }
         public ICommand HomeNavCommand { get; }
 
+        public ICommand PatientRegisterNavCommand { get; }
+
         public SelMedsViewModel(NavigationStore navigationStore)
         {
             MedsListNavCommand = new MedsListNavCommand(navigationStore);
             HomeNavCommand = new HomeNavCommand(navigationStore);
+            PatientRegisterNavCommand = new PatientRegisterNavCommand(navigationStore);
         }
     }
 }

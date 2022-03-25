@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DigitalPresc.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="950">
+             d:DesignHeight="700" d:DesignWidth="1050">
     <Grid Style="{StaticResource BackGroundGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
@@ -34,13 +34,13 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button  Command="{Binding PatientRegisterNavCommand}" Grid.Row="0" Style="{StaticResource roundedButton}" Height="118" Width="350" FontSize="22" VerticalAlignment="Top" Margin="62,129,63,0">
+                <Button  Command="{Binding PatientRegisterNavCommand}" Grid.Row="0" Style="{StaticResource roundedButton}" Height="130" Width="350" FontSize="22" VerticalAlignment="Top" Margin="87,158,88,0">
                     GENERAR RECETA
                     <Button.Background>
                         <ImageBrush Stretch="UniformToFill" ImageSource="../resources/images/BotonVerde.jpeg"/>
                     </Button.Background>
                 </Button>
-                <Button Command="{Binding HistoryNavCommand}" Grid.Row="1" Style="{StaticResource roundedButton}" Width="350" FontSize="22" Margin="62,10,63,128">
+                <Button Command="{Binding HistoryNavCommand}" Style="{StaticResource roundedButton}" Width="350" FontSize="22" Margin="88,10,87,168" Grid.Row="1">
                     HISTORIAL
                     <Button.Background>
                         <ImageBrush Stretch="UniformToFill" ImageSource="../resources/images/BotonAzul.jpeg"/>

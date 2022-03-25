@@ -5,10 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DigitalPresc.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="950">
+             d:DesignHeight="700" d:DesignWidth="1050">
     <Grid Style="{StaticResource BackGroundGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#0b3736">
@@ -22,28 +23,38 @@
                 </Button.Background>
             </Button>
         </Grid>
-        <Grid Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="390"/>
-                <RowDefinition Height="140"/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Background="#b8b9bc" Opacity="0.75" Margin="130 30">
-                <TextBlock Text="Datos del paciente" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold"/>
+        <Grid Grid.Row="1" Margin="0,0,0,219" Grid.RowSpan="2">
+            <Grid Grid.Row="0" Background="#b8b9bc" Opacity="0.75" Margin="134,43,134,23">
+                <TextBlock Text="Datos y diagnóstico del paciente" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold" Margin="0,32,0,0"/>
+                <TextBlock Text="Nombre" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Margin="25,78,0,0"/>
+                <TextBox HorizontalAlignment="Left" Margin="25,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Height="28"/>
+                <TextBlock Text="Sexo" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Margin="25,153,0,0"/>
+                <ComboBox HorizontalAlignment="Left" Margin="25,180,0,0" VerticalAlignment="Top" Width="134" Height="26">
+                    <ComboBoxItem IsSelected="True">Prefiero no decir</ComboBoxItem>
+                    <ComboBoxItem>Hombre</ComboBoxItem>
+                    <ComboBoxItem>Mujer</ComboBoxItem>
+                </ComboBox>
+                <TextBlock Text="Edad" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Margin="205,0,0,0"/>
+                <TextBox HorizontalAlignment="Left" Margin="200,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="28"/>
+                <TextBlock Text="Alergias" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Margin="25,227,0,0"/>
+                <TextBox HorizontalAlignment="Left" Margin="24,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="296" Height="28"/>
+                <TextBlock Text="Enfermedades crónicas" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Margin="362,78,0,0"/>
+                <TextBox HorizontalAlignment="Left" Margin="362,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Height="67"/>
+                <TextBlock Text="Enfermedades crónicas" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Margin="362,193,0,0"/>
+                <TextBox HorizontalAlignment="Left" Margin="362,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295" Height="67"/>
             </Grid>
-            <Grid Grid.Row="1">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Button Command="{Binding HomeNavCommand}" Grid.Column="0" Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Height="40" Width="200">
-                        REGRESAR
-                    </Button>
-                    <Button Command="{Binding SelMedsNavCommand}" Grid.Column="1" Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Height="40" Width="200">
-                        CONTINUAR
-                    </Button>
-                </Grid>
-            </Grid>
+        </Grid>
+        <Grid Grid.Row="2" Margin="0,96,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Command="{Binding HomeNavCommand}" Grid.Column="0" Style="{StaticResource roundedButton}" Background="#b21600" Foreground="White" Margin="150,73,137,89">
+                REGRESAR
+            </Button>
+            <Button Command="{Binding SelMedsNavCommand}" Grid.Column="1" Style="{StaticResource roundedButton}" Background="#093735" Foreground="White" Margin="137,73,145,89">
+                CONTINUAR
+            </Button>
         </Grid>
     </Grid>
 </UserControl>

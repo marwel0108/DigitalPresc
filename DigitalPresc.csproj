@@ -11,6 +11,8 @@
     <None Remove="resources\images\BotonAzul.jpeg" />
     <None Remove="resources\images\BotonVerde.jpeg" />
     <None Remove="resources\images\Contraseña.jpeg" />
+    <None Remove="resources\images\descarga.jpg" />
+    <None Remove="resources\images\descarga.png" />
     <None Remove="resources\images\Email.jpeg" />
     <None Remove="resources\images\fondo.jpeg" />
     <None Remove="resources\images\Fondo2.png" />
@@ -28,9 +30,18 @@
     <None Remove="resources\images\medicamento7.jpeg" />
     <None Remove="resources\images\medicamento8.jpeg" />
     <None Remove="resources\images\medicamento9.jpeg" />
+    <None Remove="resources\images\medicamentos\amlodipino.jpg" />
+    <None Remove="resources\images\medicamentos\aspirina.png" />
+    <None Remove="resources\images\medicamentos\levotiroxina.jpg" />
+    <None Remove="resources\images\medicamentos\omeprazol.jpg" />
+    <None Remove="resources\images\medicamentos\ramipril.jpg" />
+    <None Remove="resources\images\medicamentos\simvastatina.jpg" />
+    <None Remove="resources\images\printer.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="resources\images\descarga.jpg" />
+    <Resource Include="resources\images\descarga.png" />
     <Resource Include="resources\images\Fondo2.png" />
   </ItemGroup>
 
@@ -54,6 +65,13 @@
     <Resource Include="resources\images\medicamento7.jpeg" />
     <Resource Include="resources\images\medicamento8.jpeg" />
     <Resource Include="resources\images\medicamento9.jpeg" />
+    <Resource Include="resources\images\medicamentos\amlodipino.jpg" />
+    <Resource Include="resources\images\medicamentos\aspirina.png" />
+    <Resource Include="resources\images\medicamentos\levotiroxina.jpg" />
+    <Resource Include="resources\images\medicamentos\omeprazol.jpg" />
+    <Resource Include="resources\images\medicamentos\ramipril.jpg" />
+    <Resource Include="resources\images\medicamentos\simvastatina.jpg" />
+    <Resource Include="resources\images\printer.jpg" />
   </ItemGroup>
 
 </Project>

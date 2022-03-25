@@ -24,5 +24,6 @@ namespace DigitalPresc.Views
         {
             InitializeComponent();
         }
+
     }
 }

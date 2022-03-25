@@ -25,7 +25,7 @@ namespace DigitalPresc
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            _navigationStore.CurrentViewModel = new LoginViewModel(_navigationStore);
+            _navigationStore.CurrentViewModel = new HomeViewModel(_navigationStore);
             MainWindow = new MainWindow()
             {
                 DataContext = new MainViewModel(_navigationStore)
